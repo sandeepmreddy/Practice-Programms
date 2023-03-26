@@ -1,3 +1,5 @@
+package algo;
+
 public class Stack {
 
     private int top = -1;
@@ -13,7 +15,7 @@ public class Stack {
     {
         if(top == maxSize-1)
         {
-            System.out.println("Stack overflow");
+            System.out.println("algo.Stack overflow");
         }else {
             top++;
             arr[top] = a;
@@ -25,7 +27,7 @@ public class Stack {
     {
         if(top == -1)
         {
-            System.out.println("Stack under flow");
+            System.out.println("algo.Stack under flow");
             return -1;
         }else {
             int topVal= arr[top];
@@ -39,7 +41,7 @@ public class Stack {
     {
         if(top == -1)
         {
-            System.out.println("Stack under flow");
+            System.out.println("algo.Stack under flow");
             return -1;
         }else {
 
@@ -51,7 +53,7 @@ public class Stack {
     public static void main(String[] args)
     {
         Stack s=new Stack(5);
-        System.out.println("Stack pop1  "+s.pop());
+        System.out.println("algo.Stack pop1  "+s.pop());
         s.push(1);
         s.push(2);
         s.push(3);
@@ -59,12 +61,12 @@ public class Stack {
         s.push(5);
         s.push(6);
 
-        System.out.println("Stack top  "+s.top());
+        System.out.println("algo.Stack top  "+s.top());
 
-        System.out.println("Stack pop1  "+s.pop());
-        System.out.println("Stack pop2  "+s.pop());
+        System.out.println("algo.Stack pop1  "+s.pop());
+        System.out.println("algo.Stack pop2  "+s.pop());
 
-        System.out.println("Stack top  "+s.top());
+        System.out.println("algo.Stack top  "+s.top());
 
     }
 }

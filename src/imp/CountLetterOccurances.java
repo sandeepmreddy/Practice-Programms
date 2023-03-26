@@ -1,3 +1,5 @@
+package imp;
+
 import java.util.HashMap;
 
 public class CountLetterOccurances {

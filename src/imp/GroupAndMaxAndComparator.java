@@ -1,10 +1,11 @@
+package imp;
+
 import java.util.ArrayList;
         import java.util.Arrays;
         import java.util.Collections;
         import java.util.Comparator;
         import java.util.List;
-        import java.util.Map;
-        import java.util.OptionalDouble;
+import java.util.OptionalDouble;
         import java.util.stream.Collectors;
         import java.util.stream.Stream;
 
@@ -53,7 +54,7 @@ public class GroupAndMaxAndComparator {
         employeeList.sort((Employee e1, Employee e2)->e1.getEmpAge()-e2.getEmpAge());
         employeeList.forEach((emp) -> System.out.println(emp.getEmpName()+"=="+emp.getEmpAge()));
 
-        //Find Employee salaries who are having more than 50k salary and add 10k hike to those employees.
+        //Find imp.Employee salaries who are having more than 50k salary and add 10k hike to those employees.
         List<Integer> addIncrement =employeeList.stream().filter(e->e.getEmpAge() >30)
                 .map(e ->e.getEmpAge()+10).collect(Collectors.toList());
         System.out.println("processed list,addIncrement: " + addIncrement);

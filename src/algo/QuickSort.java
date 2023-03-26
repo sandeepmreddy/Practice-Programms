@@ -1,4 +1,6 @@
-// Java program for implementation of QuickSort
+package algo;
+
+// Time complexity : Best and Average O(n log n) and worest O(n)2
 class QuickSort
 {
     int partition(int arr[], int low,int high)
