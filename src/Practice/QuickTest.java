@@ -1,52 +1,64 @@
 package Practice;
 
-public class QuickTest {
-    static int partition(int low, int high,  int arr[])
-    {
-        int i= low-1;
-        int pi = arr[high];
+import java.util.Stack;
 
-        for(int j=0;j< high;j++)
+public class QuickTest {
+    private static boolean balanced(String str)
+    {
+        Stack<Character> s = new Stack<Character>();
+        for(int i=0; i< str.length();i++)
         {
-            if (arr[j]<pi) {
-                i++;
-                int temp= arr[i];
-                arr[i] = arr[j];
-                arr[j]=temp;
+            char c= str.charAt(i);
+            if( c == '(' || c == '{' || c == '[')
+            {
+                s.push(c);
+            }
+            if(s.isEmpty())
+                return false;
+            switch (c)
+            {
+                case ')':
+                {
+                    char topElement = s.pop();
+                    if(topElement == '{' || topElement == '[')
+                    {
+                        return  false;
+
+                    }
+                    break;
+                }
+                case ']': {
+                    char topElement = s.pop();
+                    if (topElement == '{' || topElement == '(') {
+                        return false;
+                    }
+                    break;
+                }
+
+                case '}': {
+                    char topElement = s.pop();
+                    if (topElement == '(' || topElement == '[') {
+                        return false;
+                    }
+                    break;
+                }
 
             }
 
         }
-
-        int temp= arr[high];
-        arr[high] = arr[i+1];
-        arr[i+1]=temp;
-
-        return i+1;
+        return s.isEmpty();
     }
-
-    public static void sort(int low, int high, int arr[])
-    {
-
-        if(low<high)
-        {
-            int pi = partition(0, high,  arr);;
-            sort(0,pi-1,  arr);
-            sort(pi+1,high,  arr);
-        }
-
-    }
-
     public static void main(String[] args) {
         System.out.println();
-        int arr[] ={6,7,8,9,12,1,2,3,4,5};
-        sort(0, arr.length-1,  arr);
-        for(int i=0; i<= arr.length-1; i++)
+        String str="{[()]}";
+        if(balanced(str))
         {
-            System.out.println(arr[i]);
+            System.out.println("balanced");
+        }else
+        {
+            System.out.println("non balanced");
         }
 
     }
-
 
 }
