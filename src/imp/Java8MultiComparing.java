@@ -24,7 +24,8 @@ public class Java8MultiComparing {
     public static void main(String[] args) {
         List<Employee> employeeList = getEmployees();
 
-        Map<Integer,Long> map = employeeList.stream().collect(Collectors.groupingBy(Employee::getEmpAge,Collectors.counting()));
+        Map<Integer,Long> map = employeeList.stream()
+                .collect(Collectors.groupingBy(Employee::getEmpAge,Collectors.counting()));
 
         map.forEach((k,v)->System.out.println("Age: " + k + ", count: " + v));
 

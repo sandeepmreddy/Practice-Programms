@@ -3,7 +3,7 @@ package imp;
 public class Employee {
     private String empName;
     private int empAge;
-    Employee(String empName,int empAge)
+    public Employee(String empName, int empAge)
     {
         this.empName =empName;
         this.empAge = empAge;
