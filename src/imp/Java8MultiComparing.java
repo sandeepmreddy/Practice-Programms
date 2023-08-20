@@ -35,6 +35,14 @@ public class Java8MultiComparing {
                         Collectors.groupingBy(Employee::getEmpName,
                                 Collectors.groupingBy(Employee::getEmpAge,
                                         Collectors.counting())));
+										
+		multipleFieldsMap1.forEach((empName, ageCountMap) -> {
+			System.out.println("Employee Name: " + empName);
+			ageCountMap.forEach((empAge, count) -> {
+				System.out.println("  Age: " + empAge + ", Count: " + count);
+			});
+		});
+
 
         //Compare by first name and then age
         Comparator<Employee> compareByName = Comparator
@@ -44,6 +52,10 @@ public class Java8MultiComparing {
         List<Employee> sortedEmployees = employeeList.stream()
                 .sorted(compareByName)
                 .collect(Collectors.toList());
+				
+sortedEmployees.forEach(employee -> {
+    System.out.println("Name: " + employee.getEmpName() + ", Age: " + employee.getEmpAge());
+});
 
 
         employeeList.sort((Employee e1,Employee e2)->e1.getEmpAge()-e2.getEmpAge());
