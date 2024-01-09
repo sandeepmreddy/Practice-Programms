@@ -1,0 +1,87 @@
+import java.util.ArrayList;  
+import java.util.List;  
+import java.util.function.Consumer;  
+public class ConsumerInterfaceExample {  
+    static void addList(List<Integer> list){  
+        // Return sum of list values  
+        int result = list.stream()  
+                   .mapToInt(Integer::intValue)  
+                   .sum();  
+        System.out.println("Sum of list values: "+result);  
+    }  
+    public static void main(String[] args) {  
+        // Creating a list and adding values  
+                List<Integer> list = new ArrayList<Integer>();  
+                list.add(10);  
+                list.add(20);  
+                list.add(30);  
+                list.add(40);  
+        // Referring method to String type Consumer interface   
+        Consumer<List<Integer>> consumer = ConsumerInterfaceExample::addList;  
+        consumer.accept(list);  // Calling Consumer method  
+          
+    }  
+}  
+
+
+// Java program to illustrate Predicate Chaining
+
+import java.util.function.Predicate;
+public class PredicateInterfaceExample2 {
+	public static void main(String[] args)
+	{
+		Predicate<Integer> greaterThanTen = (i) -> i > 10;
+
+		// Creating predicate
+		Predicate<Integer> lowerThanTwenty = (i) -> i < 20;
+		boolean result = greaterThanTen.and(lowerThanTwenty).test(15);
+		System.out.println(result);
+
+		// Calling Predicate method
+		boolean result2 = greaterThanTen.and(lowerThanTwenty).negate().test(15);
+		System.out.println(result2);
+	}
+}
+
+
+public class SupplierSpecializationDemo {
+
+  static String product = "Android";
+  static double price = 659.50;
+   
+    public static void main(String[] args) {
+        
+        BooleanSupplier boolSupplier = () -> product.length() == 10;
+        IntSupplier intSupplier = () -> product.length() - 2;
+        DoubleSupplier doubleSupplier = () -> price -20;
+        LongSupplier longSupplier = () -> new Date().getTime();
+        Supplier<String> supplier = () -> product.toUpperCase();
+        
+        
+        System.out.println(boolSupplier.getAsBoolean());//false
+        System.out.println(intSupplier.getAsInt());//5
+        System.out.println(doubleSupplier.getAsDouble());//639.5
+        System.out.println(longSupplier.getAsLong());// 1581187440978 (it depends on current time)
+        System.out.println(supplier.get());//ANDROID
+        
+    }
+}
+
+
+@FunctionalInterface
+interface MathOperation {
+    int operate(int a, int b);
+}
+
+public class FunctionalInterfaceExample {
+    public static void main(String[] args) {
+        // Using a lambda expression to implement the abstract method
+        MathOperation addition = (a, b) -> a + b;
+        
+        // Using a method reference to implement the abstract method
+        MathOperation subtraction = (a, b) -> a - b;
+        
+        System.out.println("Addition: " + addition.operate(5, 3));
+        System.out.println("Subtraction: " + subtraction.operate(8, 4));
+    }
+}

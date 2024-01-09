@@ -57,6 +57,9 @@ sortedEmployees.forEach(employee -> {
     System.out.println("Name: " + employee.getEmpName() + ", Age: " + employee.getEmpAge());
 });
 
+        Employee val=employeeList.stream().max(Comparator.comparingInt(Employee::getEmpAge)).get();
+        System.out.println(val.getEmpAge());
+
 
         employeeList.sort((Employee e1,Employee e2)->e1.getEmpAge()-e2.getEmpAge());
 
