@@ -1,4 +1,4 @@
-package algo;
+package algo.Tree;
 
 /*
 
@@ -9,12 +9,12 @@ In-order traversal: In this method, you visit the left subtree first, then the r
 Post-order traversal: In this method, you visit the left subtree first, then the right subtree, and finally the root node. This is often used when you need to perform some operation on each node in the tree, and the order of visiting the nodes does not matter.
 
 */
-class TreeNode {
+class TreeNode2 {
     int val;
-    TreeNode left;
-    TreeNode right;
+    TreeNode2 left;
+    TreeNode2 right;
 
-    TreeNode(int val) {
+    TreeNode2(int val) {
         this.val = val;
         this.left = null;
         this.right = null;
@@ -24,11 +24,11 @@ class TreeNode {
 public class TreeProgram {
     public static void main(String[] args) {
         // Creating a binary tree
-        TreeNode root = new TreeNode(1);
-        root.left = new TreeNode(2);
-        root.right = new TreeNode(3);
-        root.left.left = new TreeNode(4);
-        root.left.right = new TreeNode(5);
+        TreeNode2 root = new TreeNode2(1);
+        root.left = new TreeNode2(2);
+        root.right = new TreeNode2(3);
+        root.left.left = new TreeNode2(4);
+        root.left.right = new TreeNode2(5);
 
         // Traverse the binary tree in pre-order
         System.out.println("Preorder traversal of binary tree is:");
@@ -44,7 +44,7 @@ public class TreeProgram {
     }
 
     // Preorder traversal of binary tree
-    public static void preOrder(TreeNode node) {
+    public static void preOrder(TreeNode2 node) {
         if (node == null) return;
         System.out.print(node.val + " ");
         preOrder(node.left);
@@ -52,7 +52,7 @@ public class TreeProgram {
     }
 
     // Inorder traversal of binary tree
-    public static void inOrder(TreeNode node) {
+    public static void inOrder(TreeNode2 node) {
         if (node == null) return;
         inOrder(node.left);
         System.out.print(node.val + " ");
@@ -60,7 +60,7 @@ public class TreeProgram {
     }
 
     // Postorder traversal of binary tree
-    public static void postOrder(TreeNode node) {
+    public static void postOrder(TreeNode2 node) {
         if (node == null) return;
         postOrder(node.left);
         postOrder(node.right);

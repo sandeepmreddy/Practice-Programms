@@ -1,4 +1,5 @@
-package algo;
+package algo.stack;
+
 
 public class Stack {
 
@@ -8,7 +9,7 @@ public class Stack {
     Stack(int maxSize)
     {
         this.maxSize = maxSize;
-       arr = new int[maxSize];
+        arr = new int[maxSize];
         top = -1;
     }
     void push(int a)
@@ -70,3 +71,4 @@ public class Stack {
 
     }
 }
+

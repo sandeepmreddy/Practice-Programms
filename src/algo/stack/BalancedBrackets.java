@@ -1,4 +1,4 @@
-package algo;// Java program for checking
+package algo.stack;
 // balanced brackets
 public class BalancedBrackets {
 

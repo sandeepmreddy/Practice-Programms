@@ -1,4 +1,4 @@
-package algo;
+package algo.Tree;
 
 class TreeNode1 {
     int val;
@@ -12,10 +12,10 @@ class TreeNode1 {
     }
 }
 
-class BinaryTree {
+class BinaryTree1 {
     TreeNode1 root;
 
-    public BinaryTree() {
+    public BinaryTree1() {
         this.root = null;
     }
 
@@ -44,7 +44,7 @@ class BinaryTree {
     }
 
     public static void main(String[] args) {
-        BinaryTree tree = new BinaryTree();
+        BinaryTree1 tree = new BinaryTree1();
         tree.insert(10);
         tree.insert(5);
         tree.insert(3);
