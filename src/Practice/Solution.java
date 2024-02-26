@@ -1,6 +1,4 @@
 package Practice;
 
-
-
 class Solution {
 }

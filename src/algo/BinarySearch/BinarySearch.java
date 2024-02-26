@@ -1,4 +1,4 @@
-package algo.Tree;
+package algo.BinarySearch;
 
 // Java program for implementation of algo.QuickSort
 class BinarySearch

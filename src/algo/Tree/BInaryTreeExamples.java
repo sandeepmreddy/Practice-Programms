@@ -1,8 +1,8 @@
 package algo.Tree;
 
 class TreeNode {
-    TreeNode left;
-    TreeNode right;
+    TreeNode5 left;
+    TreeNode5 right;
     int val;
 
     TreeNode(int val) {
@@ -13,15 +13,15 @@ class TreeNode {
 }
 
 class BinaryTree {
-    TreeNode root;
+    TreeNode5 root;
 
     void insert(int val) {
         this.root = insertNode(root, val);
     }
 
-    TreeNode insertNode(TreeNode node, int val) {
+    TreeNode5 insertNode(TreeNode5 node, int val) {
         if (node == null) {
-            return new TreeNode(val);
+            return new TreeNode5(val);
         } else if (val < node.val) {
             node.left = insertNode(node.left, val);
         } else {
@@ -30,7 +30,7 @@ class BinaryTree {
         return node;
     }
 
-    private static void inOrderTraversal(TreeNode node) {
+    private static void inOrderTraversal(TreeNode5 node) {
         if (node == null) {
             return;
         }
@@ -42,7 +42,7 @@ class BinaryTree {
 
     }
 
-    private int maxDepth(TreeNode node) {
+    private int maxDepth(TreeNode5 node) {
         int val1 = 0;
         if (node == null) {
             return 0;
@@ -54,7 +54,7 @@ class BinaryTree {
         return val1;
     }
 
-    private static boolean isSameTree(TreeNode node1, TreeNode node2) {
+    private static boolean isSameTree(TreeNode5 node1, TreeNode5 node2) {
         if (node1 == null && node2 == null) {
             return true;
 
@@ -66,9 +66,10 @@ class BinaryTree {
             return isSameTree(node1.left, node2.left)
                     && isSameTree(node1.right, node2.right);
         }
+
     }
 
-    private static int countNodes(TreeNode node) {
+    private static int countNodes(TreeNode5 node) {
         int count=0;
         if(node!=null) {
             count =count+countNodes(node.left)+1;
