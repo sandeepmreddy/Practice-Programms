@@ -1,12 +1,12 @@
 package algo.stack;
 
 
-public class Stack {
+public class Stack2 {
 
     private int top = -1;
     private int maxSize;
     private int[] arr;
-    Stack(int maxSize)
+    Stack2(int maxSize)
     {
         this.maxSize = maxSize;
         arr = new int[maxSize];
@@ -53,7 +53,7 @@ public class Stack {
 
     public static void main(String[] args)
     {
-        Stack s=new Stack(5);
+        Stack2 s=new Stack2(5);
         System.out.println("algo.Stack pop1  "+s.pop());
         s.push(1);
         s.push(2);

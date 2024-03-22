@@ -1,4 +1,0 @@
-package Practice;
-
-class Solution {
-}
