@@ -54,7 +54,9 @@ public class DFS {
 
             vertex.setVisited(true);
             System.out.print(vertex.data + " ");
-            vertex.getNeigbours().stream().filter(neighbour->!neighbour.isVisited()).forEach(this::traverseRecursively);
+            vertex.getNeigbours().stream()
+                    .filter(neighbour->!neighbour.isVisited())
+                    .forEach(this::traverseRecursively);
     }
 
     public static void main(String args[]) {
@@ -71,10 +73,7 @@ public class DFS {
 
 
         DFS dfs= new DFS(v0);
-        //dfs.traverse();
-        dfs.traverseRecursively(v0);
-
-
-
+        dfs.traverse();
+        //dfs.traverseRecursively(v0);
     }
 }

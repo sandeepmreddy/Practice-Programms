@@ -3,7 +3,7 @@ package Arrays;
 public class FirstOccurrenceIndex {
 
     public static void main(String[] args) {
-        String str = "Helloworldhiworld";
+        String str = "HBÑ world";
         String substring = "world";
 
         int index = str.indexOf(substring);
