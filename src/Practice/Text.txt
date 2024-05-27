@@ -1,0 +1,160 @@
+Goal: Advance our Technology-wide EPIC strategy to be the destination for exceptional global talent, setting the standard for the future of banking through secure, innovative, and resilient solutions.
+
+Efficiency - Deliver a lower cost to business partners, clients, and customers by optimizing operations with speed and scale through the utilization of new technology to reduce friction and complexity.
+
+
+Achievements:
+
+Delivered all sprint commitments and completed all assigned user stories without defects in the lower and production environment.
+Participated in the development of loan InfoEx APIs, including getloansInbankruptcy and gethistorydefaultsteps.
+Performed functional and regression testing for InfoEx.
+Resolved production issues for the "Get Bankruptcy Case Listing" feature.
+Completed the Apigee migration for all InfoEx APIs and provided support for deployments in lower and production environments.
+Achieved 100% compliance with GTG for all applications on the Enterprise pipeline and adopted GitHub Copilot.
+Maintained hard gating compliance with tools like SonarQube, Black Duck, and Checkmarx.
+Supported and debugged the HLBNK application as needed.
+Implemented a Splunk alert for loans not released from bankruptcy for the HLBIK application.
+Completed mandatory training and additional courses such as Kafka and Apigee, AZ-900, MongoDB, Java 17, and Angular.
+Identified root causes of issues through Splunk logs and provided solutions.
+Identified critical issues during HLBNK and InfoEx regression and informed the team to address them.
+Provided support and solutions for the bankruptcy setup rules application and production deployment.
+Ensured 100% compliance with GTG for all applications on the Enterprise pipeline.
+Adopted GitHub Copilot and maintained compliance with hard gating standards.
+Developed and shared coding standards to improve the quality of the team's code.
+Proactively identified and mitigated risks associated with the business process.
+
+Goal: Modernization & Digital Architecture/Speed - Migrate to Microservices and complete Apigee migrations.
+
+Achievements:
+
+Involved in Apigee migration for all InfoEx APIs.
+Successfully implemented HLBNK and InfoEx Micro service applications.
+Supported deployments in lower and production environments.
+Addressed issues related to historical bankruptcy plans.
+
+Goal: Simplification & Refactoring/Stability - Rationalize and retire applications to improve stability.
+
+Achievements:
+
+Slate and Littr will be retired once the Kafka implementation deployed into Production.
+Provided support for the HLBNK application, including debugging and regression testing.
+Implemented Splunk alerts and identified critical issues to improve application stability.
+
+Goal: Business Priorities Success - Implement critical business features and maintain system stability.
+
+Achievements:
+
+Delivered on key business features like "Get Bankruptcy Case Listing".
+Participated in the functional and regression testing of the HLBNK and InfoEx application.
+
+Goal: Protection - Ensure a secure and stable environment by managing risks and vulnerabilities.
+
+Achievements:
+
+Adhered to hard gating compliance with security tools like SonarQube, Black Duck, and Checkmarx.
+Completed all mandatory trainings on time.
+Identified and mitigated risks in advance to ensure timely deployments.
+
+Goal: Adopt quality first approach to software delivery
+
+Achievements:
+
+Test Automation: Conducted regression testing for InfoEx and HLBNK applications.
+Branch/Merge: Followed enterprise standard branch strategy, ensuring smooth integration and delivery.
+Adopt enterprise quality/automation tooling to reduce risk in our software delivery (
+
+Tool Adoption: Utilized GitHub Copilot, SonarQube, Black Duck, and Checkmarx for code quality and security checks.
+Compliance: Achieved 100% compliance with GTG for all applications.
+Ensure all applications follow enterprise standard branch strategy for agile software development:
+
+Branching Strategy: Maintained 100% compliance with the enterprise branching strategy.
+Targets:
+
+Branching strategy GTG: Achieved 100% compliance.
+In sprint automation: Implemented in sprint automation for all new features.
+Sonar scan, Black Duck, Checkmarx compliant: Maintained compliance with all these tools.
+Proactively identify issues by Self Identifying risk associated with business processes:
+
+Issue Identification: Identified critical issues during regression testing of HLBNK and InfoEx, leading to timely resolutions.
+Full adoption of EL Change Management Framework:
+
+Change Management: Fully adopted the EL Change Management Framework, ensuring structured and risk-free changes.
+Ensure Zero DLP issues reported:
+
+DLP Issues: Achieved zero Data Loss Prevention (DLP) issues reported.
+Complete all Mandatory trainings in time:
+
+Training Completion: Completed all mandatory training courses on time.
+Advance our DORA adoption and align to Enterprise goals:
+
+DORA Metrics: Advanced adoption of DevOps Research and Assessment (DORA) metrics, aligning with enterprise goals for deployment frequency, lead time for changes, mean time to recover, and change failure rate.
+Metrics:
+
+% of cyber related data breach by employees with Persistent Privileged Access: Achieved 0%.
+% of applications utilizing IAM approved systems/solutions for provisioning, deprovisioning, and certification: Achieved 100%.
+% adherence to availability SLA - critical applications: Maintained 99.9% adherence.
+% successful validation of critical and high issues: Achieved 99% successful validation.
+% of critical/high infrastructure vulnerability instances within required resolution date: Resolved 98% within the required resolution date.
+
+Goal: Innovation - Drive and showcase advancements through innovative solutions.
+
+Achievements:
+
+Participated in one Hackathon and adopted GitHub Copilot.
+Developed coding standards and shared them with the team.
+Completed training in new technologies like Kafka and Apigee Full Stack.
+Provided innovative solutions to meet project goals.
+
+Goal: Culture - Foster a culture of continuous learning, collaboration, and risk management.
+
+Achievements:
+
+Completed various certifications and training courses.
+Contributed to projects outside of the immediate scrum team to foster collaboration.
+Ensured 100% survey participation.
+Adhered to coding standards and proactively identified issues.
+
+
+
+
+
+
+
+
+Completed the AZ-900 certification along with courses in MongoDB, Java 17, and Angular.
+Finished comprehensive training in Kafka and Apigee Full Stack.
+Completed all mandatory trainings.
+Acquired strong functional understanding of HLBNK, ECM Kafka, and InfoEx.
+Aim to leverage Git Copilot for time and cost savings.
+Need to improve overall banking functional knowledge.
+ 
+- Identified and promptly reported critical issues during the HLBNK and InfoEx regression tests, facilitating timely resolutions.
+- Provided ongoing support and debugging for the HLBNK application.
+- Participated in comprehensive end-to-end functional regression testing for the HLBNK application.
+- Resolved long-standing Kafka issues in the Slate and Littr applications.
+- Developed and implemented coding standards for the team to enhance code quality.
+- Achieved 100% compliance with the Branching Strategy GTG, in-sprint automation, SonarQube scans, Black Duck, and Checkmarx.
+- Ensured 100% compliance with GTG for all applications on the Enterprise pipeline and integrated GitHub Copilot.
+
+
+
+
+**Professional Appraisal Comments Summary**
+
+1. Delivered all sprint commitments and completed all assigned user stories with no defects in the production environment.
+2. Actively participated in the development and enhancement of InfoEx APIs, including getloansInbankruptcy and gethistorydefaultsteps.
+3. Conducted comprehensive regression testing for InfoEx and addressed historical bankruptcy issues.
+4. Successfully resolved production issues related to the "Get Bankruptcy Case Listing" feature.
+5. Played a key role in migrating InfoEx APIs to Apigee and provided support for deployments in lower and production environments.
+6. Ensured compliance with hard gating standards like Sonar, Black Duck, and Checkmarx.
+7. Implemented a Splunk alert for HLBIK application to monitor loans not released from bankruptcy.
+8. Provided continuous support and solutions to team members, leveraging Splunk logs to identify root causes of issues.
+9. Engaged in continuous learning and completed certifications in AZ-900, MongoDB, Java 17, Angular, Kafka, and Apigee Full Stack.
+10. Actively contributed to projects outside the scrum team, fostering collaboration and innovation.
+11. Participated in a hackathon and adopted GitHub Copilot for improved efficiency.
+12. Identified and mitigated risks well in advance, ensuring 100% successful deployments.
+13. Developed and enforced coding standards to enhance code quality and achieved full compliance with the Branching Strategy GTG and in-sprint automation.
+14. Conducted thorough end-to-end functional regression testing and provided debugging support for HLBNK applications.
+15. Demonstrated a strong functional understanding of HLBNK, ECM Kafka, and InfoEx, with ongoing efforts to improve overall banking functional knowledge.
+16. Provided design solutions as needed
+17.I hope my skills enable me to excel in a lead role moving forward.
