@@ -1,24 +1,15 @@
 package algo.Tree;
 
-class TreeNode7 {
-    int val;
-    TreeNode7 left, right;
-
-    public TreeNode7(int item) {
-        val = item;
-        left = right = null;
-    }
-}
 
 public class BSTDeleteNode {
-    TreeNode7 root;
+    TreeNode root;
 
     public BSTDeleteNode() {
         root = null;
     }
 
     // Function to delete a node
-    TreeNode7 deleteNode(TreeNode7 root, int key) {
+    TreeNode deleteNode(TreeNode root, int key) {
         // Base Case: If the tree is empty
         if (root == null) return root;
 
@@ -45,7 +36,7 @@ public class BSTDeleteNode {
     }
 
     // Function to find the minimum value node in a given tree
-    int minValue(TreeNode7 root) {
+    int minValue(TreeNode root) {
         int minValue = root.val;
         while (root.left != null) {
             minValue = root.left.val;
@@ -60,10 +51,10 @@ public class BSTDeleteNode {
     }
 
     // A utility function to insert a new node with given key in BST
-    TreeNode7 insertRec(TreeNode7 root, int key) {
+    TreeNode insertRec(TreeNode root, int key) {
         // If the tree is empty, return a new node
         if (root == null) {
-            root = new TreeNode7(key);
+            root = new TreeNode(key);
             return root;
         }
 
@@ -88,7 +79,7 @@ public class BSTDeleteNode {
     }
 
     // A utility function to do inorder traversal of BST
-    void inorderRec(TreeNode7 root) {
+    void inorderRec(TreeNode root) {
         if (root != null) {
             inorderRec(root.left);
             System.out.print(root.val + " ");
@@ -117,12 +108,12 @@ public class BSTDeleteNode {
         tree.inorder();
 
         System.out.println("\n\nDelete 20");
-        tree.deleteKey(20);
+        tree.deleteKey(30);
         System.out.println("Inorder traversal of the modified tree");
         tree.inorder();
 
         System.out.println("\n\nDelete 30");
-        tree.deleteKey(30);
+        tree.deleteKey(20);
         System.out.println("Inorder traversal of the modified tree");
         tree.inorder();
 

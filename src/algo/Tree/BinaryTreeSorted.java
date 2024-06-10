@@ -1,21 +1,9 @@
 package algo.Tree;
 
-class TreeNode1 {
-    int val;
-    TreeNode1 left;
-    TreeNode1 right;
+class BinaryTreeSorted {
+    TreeNode root;
 
-    public TreeNode1(int val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
-
-class BinaryTree1 {
-    TreeNode1 root;
-
-    public BinaryTree1() {
+    public BinaryTreeSorted() {
         this.root = null;
     }
 
@@ -23,9 +11,9 @@ class BinaryTree1 {
         this.root = insertNode(this.root, val);
     }
 
-    private TreeNode1 insertNode(TreeNode1 node, int val) {
+    private TreeNode insertNode(TreeNode node, int val) {
         if (node == null) {
-            return new TreeNode1(val);
+            return new TreeNode(val);
         } else if (val < node.val) {
             node.left = insertNode(node.left, val);
         } else if (val > node.val) {
@@ -34,7 +22,7 @@ class BinaryTree1 {
         return node;
     }
 
-    public void inorderTraversal(TreeNode1 node) {
+    public void inorderTraversal(TreeNode node) {
         if (node == null) {
             return;
         }
@@ -44,7 +32,7 @@ class BinaryTree1 {
     }
 
     public static void main(String[] args) {
-        BinaryTree1 tree = new BinaryTree1();
+        BinaryTreeSorted tree = new BinaryTreeSorted();
         tree.insert(10);
         tree.insert(5);
         tree.insert(3);

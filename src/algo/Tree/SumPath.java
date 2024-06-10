@@ -7,27 +7,27 @@ public class SumPath {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) return false;
 
-        LinkedList<TreeNode> node_stack = new LinkedList();
-        LinkedList<Integer> sum_stack = new LinkedList();
-        node_stack.add(root);
-        sum_stack.add(sum - root.val);
+        LinkedList<TreeNode> nodeStack = new LinkedList();
+        LinkedList<Integer> sumStack = new LinkedList();
+        nodeStack.add(root);
+        sumStack.add(sum - root.val);
 
         TreeNode node;
-        int curr_sum;
-        while (!node_stack.isEmpty()) {
-            node = node_stack.pollLast();
-            curr_sum = sum_stack.pollLast();
+        int currSum;
+        while (!nodeStack.isEmpty()) {
+            node = nodeStack.pollLast();
+            currSum = sumStack.pollLast();
             if (
-                    (node.right == null) && (node.left == null) && (curr_sum == 0)
+                    (node.right == null) && (node.left == null) && (currSum == 0)
             ) return true;
 
             if (node.right != null) {
-                node_stack.add(node.right);
-                sum_stack.add(curr_sum - node.right.val);
+                nodeStack.add(node.right);
+                sumStack.add(currSum - node.right.val);
             }
             if (node.left != null) {
-                node_stack.add(node.left);
-                sum_stack.add(curr_sum - node.left.val);
+                nodeStack.add(node.left);
+                sumStack.add(currSum - node.left.val);
             }
         }
         return false;

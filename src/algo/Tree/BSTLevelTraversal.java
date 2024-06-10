@@ -2,20 +2,10 @@ package algo.Tree;
 
 //Time,Space O(n)
 import java.util.LinkedList;
-        import java.util.Queue;
-
-class Node2 {
-    int data;
-    Node2 left, right;
-
-    public Node2(int item) {
-        data = item;
-        left = right = null;
-    }
-}
+ import java.util.Queue;
 
 public class BSTLevelTraversal {
-    Node2 root;
+    TreeNode root;
 
     public BSTLevelTraversal() {
         root = null;
@@ -25,28 +15,28 @@ public class BSTLevelTraversal {
         if (root == null)
             return;
 
-        Queue<Node2> queue = new LinkedList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
 
         while (!queue.isEmpty()) {
-            Node2 tempNode2 = queue.poll();
-            System.out.print(tempNode2.data + " ");
+            TreeNode tempTreeNode = queue.poll();
+            System.out.print(tempTreeNode.val + " ");
 
-            if (tempNode2.left != null)
-                queue.add(tempNode2.left);
+            if (tempTreeNode.left != null)
+                queue.add(tempTreeNode.left);
 
-            if (tempNode2.right != null)
-                queue.add(tempNode2.right);
+            if (tempTreeNode.right != null)
+                queue.add(tempTreeNode.right);
         }
     }
 
     public static void main(String[] args) {
         BSTLevelTraversal tree = new BSTLevelTraversal();
-        tree.root = new Node2(1);
-        tree.root.left = new Node2(2);
-        tree.root.right = new Node2(3);
-        tree.root.left.left = new Node2(4);
-        tree.root.left.right = new Node2(5);
+        tree.root = new TreeNode(1);
+        tree.root.left = new TreeNode(2);
+        tree.root.right = new TreeNode(3);
+        tree.root.left.left = new TreeNode(4);
+        tree.root.left.right = new TreeNode(5);
 
         System.out.println("Level order traversal of binary tree is: ");
         tree.printLevelOrder();

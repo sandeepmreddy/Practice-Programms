@@ -3,7 +3,7 @@ package algo.stack;
 import java.util.Map;
 import java.util.Stack;
 
-class Balanced1 {
+class BalancedWithMap {
     public static boolean isValid(String s) {
         Map<Character,Character> map= Map.of('{','}',
                 '(',')',

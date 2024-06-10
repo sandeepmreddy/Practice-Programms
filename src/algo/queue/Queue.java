@@ -1,4 +1,4 @@
-package algo;
+package algo.queue;
 
 public class Queue {
     int[] queue;
@@ -19,7 +19,7 @@ public class Queue {
     {
         if(isFull())
         {
-            System.out.println("algo.Queue is full");
+            System.out.println("algo.queue.Queue is full");
         }else
         {
             rear = rear+1 % queue.length;
@@ -33,7 +33,7 @@ public class Queue {
     {
         if(isEmpty())
         {
-            System.out.println("algo.Queue is empty");
+            System.out.println("algo.queue.Queue is empty");
             return -1;
         }else
         {

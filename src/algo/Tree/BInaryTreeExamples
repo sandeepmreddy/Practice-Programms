@@ -1,18 +1,6 @@
 package algo.Tree;
 
-class TreeNode {
-    TreeNode left;
-    TreeNode right;
-    int val;
-
-    TreeNode(int val) {
-        this.val = val;
-        this.left = null;
-        this.right = null;
-    }
-}
-
-class BinaryTree {
+class BinaryTreeExamples {
     TreeNode root;
 
     void insert(int val) {
@@ -80,7 +68,7 @@ class BinaryTree {
 
 
     public static void main(String[] args) {
-        BinaryTree binaryTree = new BinaryTree();
+        BinaryTreeExamples binaryTree = new BinaryTreeExamples();
         binaryTree.insert(10);
         binaryTree.insert(5);
         binaryTree.insert(3);
@@ -88,7 +76,7 @@ class BinaryTree {
         binaryTree.insert(12);
         binaryTree.insert(11);
 
-        BinaryTree binaryTree1 = new BinaryTree();
+        BinaryTreeExamples binaryTree1 = new BinaryTreeExamples();
         binaryTree1.insert(10);
         binaryTree1.insert(5);
         binaryTree1.insert(3);
