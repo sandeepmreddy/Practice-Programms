@@ -1,0 +1,6 @@
+skth excels at managing multiple teams and keeping track of his tasks in an organized way. His exceptional ability to integrate and coordinate with the team is remarkable. He possesses unique skills in maintaining balanced coordination across the team and providing support during challenging situations.
+
+Sdr should improve his technical proficiency and prefer to take on challenging technical tasks on his own rather than relying on the team, especially on me. During our Java debugging sessions, I noticed that his skills needed significant improvement. Over the past 2.5 months, he has not been assigned any technical tasks, which is preventing him from improving his skills in core Java.
+
+
+sli should work on improving her understanding of Java syntax. I have supported production issues and other scrum-related stories as needed, but she should focus on enhancing her Java skills, which would help reduce dependency on me and save my time as well.

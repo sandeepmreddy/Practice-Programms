@@ -86,7 +86,7 @@ class BinaryTreeExamples {
 
 
         inOrderTraversal(binaryTree.root);
-       int depth = binaryTree.maxDepth(binaryTree.root);
+        int depth = binaryTree.maxDepth(binaryTree.root);
         System.out.println("depth " +depth);
 
         boolean isSameTree = isSameTree(binaryTree.root, binaryTree1.root);
