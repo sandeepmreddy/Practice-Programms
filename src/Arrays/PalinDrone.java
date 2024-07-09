@@ -21,6 +21,7 @@ class PalinDrone {
 
     public static void main(String[] args)
     {
+        //Example racecar
         String s = "A man, a plan, a canal: Panama";
         System.out.println(isPalindrome(s));
     }

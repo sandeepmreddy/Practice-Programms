@@ -18,7 +18,7 @@ public class FirstOccurrenceIndexAlgo {
 
         for (int windowStart = 0; windowStart <= n - m; windowStart++) {
             for (int i = 0; i < m; i++) {
-                if (needle.charAt(i) != haystack.charAt(windowStart + i)) {
+                if (needle.charAt(i) != haystack.charAt( i)) {
                     break;
                 }
                 if (i == m - 1) {
