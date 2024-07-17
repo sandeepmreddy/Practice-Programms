@@ -5,13 +5,14 @@ public class RemoveDuplicates {
 
     static void removeDulicates1(int[] nums1)
     {
-        int index =1;
-        for(int i=1;i< nums1.length;i++)
+        int index =0;
+        for(int i=1;i<nums1.length;i++)
         {
-            if(nums1[i-1] !=nums1[i])
+            if(nums1[i] != nums1[i-1])
             {
-                nums1[index++] = nums1[i];
+                nums1[index++] =nums1[i];
             }
+
         }
     }
 

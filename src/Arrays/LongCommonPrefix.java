@@ -23,6 +23,6 @@ public class LongCommonPrefix {
         String count=longCommonPrefix1(nums1);
         System.out.print(count);
 
-        System.out.println("\nPrint"+ "flower".indexOf("flow"));
+        System.out.println("\nPrint "+ "flower".indexOf("flow"));
     }
 }
