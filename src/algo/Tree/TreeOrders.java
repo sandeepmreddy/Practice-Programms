@@ -19,11 +19,11 @@ public class TreeOrders {
         preOrder(root);
 
         // Traverse the binary tree in in-order
-        System.out.println("Inorder traversal of binary tree is:");
+        System.out.println("\n Inorder traversal of binary tree is:");
         inOrder(root);
 
         // Traverse the binary tree in post-order
-        System.out.println("Postorder traversal of binary tree is:");
+        System.out.println("\n Postorder traversal of binary tree is:");
         postOrder(root);
     }
 

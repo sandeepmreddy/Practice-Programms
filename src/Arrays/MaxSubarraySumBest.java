@@ -2,7 +2,7 @@ package Arrays;
 
 public class MaxSubarraySumBest {
     public static void main(String[] args) {
-        int[] array = {-1, -5, 3, 5, -6, 5};
+        int[] array = {-1, -5, 3, 5,15, -6, 5};
         int maxSum = findMaxSubarraySum(array);
         System.out.println("Maximum Subarray Sum is: " + maxSum);
     }

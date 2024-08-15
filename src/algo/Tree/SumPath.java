@@ -1,33 +1,32 @@
 package algo.Tree;
 
-import java.util.LinkedList;
+import java.util.Stack;
 
 public class SumPath {
 
     public static boolean hasPathSum(TreeNode root, int sum) {
         if (root == null) return false;
 
-        LinkedList<TreeNode> nodeStack = new LinkedList();
-        LinkedList<Integer> sumStack = new LinkedList();
-        nodeStack.add(root);
-        sumStack.add(sum - root.val);
+        Stack<TreeNode> nodeStack = new Stack<>();
+        Stack<Integer> sumStack = new Stack<>();
+        nodeStack.push(root);
+        sumStack.push(sum - root.val);
 
         TreeNode node;
         int currSum;
         while (!nodeStack.isEmpty()) {
-            node = nodeStack.pollLast();
-            currSum = sumStack.pollLast();
-            if (
-                    (node.right == null) && (node.left == null) && (currSum == 0)
-            ) return true;
+            node = nodeStack.pop();
+            currSum = sumStack.pop();
+            if ((node.right == null) && (node.left == null) && (currSum == 0))
+                return true;
 
             if (node.right != null) {
-                nodeStack.add(node.right);
-                sumStack.add(currSum - node.right.val);
+                nodeStack.push(node.right);
+                sumStack.push(currSum - node.right.val);
             }
             if (node.left != null) {
-                nodeStack.add(node.left);
-                sumStack.add(currSum - node.left.val);
+                nodeStack.push(node.left);
+                sumStack.push(currSum - node.left.val);
             }
         }
         return false;
@@ -35,7 +34,6 @@ public class SumPath {
 
     public static void main(String[] args) {
         // Example usage
-        BinaryTreeInverter inverter = new BinaryTreeInverter();
 
         // Create a sample binary tree
         TreeNode root = new TreeNode(4);
@@ -46,7 +44,7 @@ public class SumPath {
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(9);
 
-        boolean sumPath= hasPathSum(root, 17);
-        System.out.println("sumPath: " +sumPath);
+        boolean sumPath = hasPathSum(root, 17);
+        System.out.println("sumPath: " + sumPath);
     }
 }

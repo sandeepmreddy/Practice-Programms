@@ -60,7 +60,8 @@ class BinaryTreeExamples {
     private static int countNodes(TreeNode node) {
         int count=0;
         if(node!=null) {
-            count =count+countNodes(node.left)+1;
+            count =count+countNodes(node.left);
+            count = count+1;
             count =count+countNodes(node.right);
         }
         return count;
