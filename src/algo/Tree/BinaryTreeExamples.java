@@ -17,7 +17,7 @@ class BinaryTreeExamples {
         }
         return node;
     }
-
+// Left,Root, Right
     private static void inOrderTraversal(TreeNode node) {
         if (node == null) {
             return;

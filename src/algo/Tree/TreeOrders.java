@@ -28,6 +28,7 @@ public class TreeOrders {
     }
 
     // Preorder traversal of binary tree
+    //Node,left,right
     public static void preOrder(TreeNode node) {
         if (node == null) return;
         System.out.print(node.val + " ");
@@ -36,6 +37,7 @@ public class TreeOrders {
     }
 
     // Inorder traversal of binary tree
+    //Left,Node,right
     public static void inOrder(TreeNode node) {
         if (node == null) return;
         inOrder(node.left);
@@ -44,6 +46,7 @@ public class TreeOrders {
     }
 
     // Postorder traversal of binary tree
+    //left,right,node
     public static void postOrder(TreeNode node) {
         if (node == null) return;
         postOrder(node.left);
