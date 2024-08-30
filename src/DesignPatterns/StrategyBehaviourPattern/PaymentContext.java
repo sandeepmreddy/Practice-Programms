@@ -11,6 +11,6 @@ public class PaymentContext {
 
     public void executePayment(double amount) {
 
-        .pay(amount);
+        paymentStrategy.pay(amount);
     }
 }
