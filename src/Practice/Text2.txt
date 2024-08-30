@@ -1,0 +1,11 @@
+AI/ML Model for Monitoring Splunk Logs and Consolidating Key Metrics
+
+The objective of this idea is to develop an AI/ML model to monitor Splunk logs across all applications within the /Organization, aiming to consolidate the following key metrics:
+
+1. Error and Exception Metrics: These include application errors, system errors, and network errors, which can facilitate early identification and resolution of issues.
+2. Security Metrics: These track failed login attempts and suspicious activities, aiding in the detection of potential security threats and breaches.
+3. Performance Metrics: Metrics such as CPU usage, memory usage, disk I/O, and network I/O. These help identify performance bottlenecks and optimize resource utilization.
+4. Infrastructure Metrics: These metrics track server uptime and service availability, helping to ensure the reliability and continuity of your systems.
+5. Application Metrics: Metrics such as response times and request rates, which can help in optimizing application performance and enhancing user experience.
+
+A dashboard should be created using Splunk's dashboard features to display these metrics, allowing visibility into each application's performance.

@@ -10,6 +10,7 @@ public class PaymentContext {
     }
 
     public void executePayment(double amount) {
-        paymentStrategy.pay(amount);
+
+        .pay(amount);
     }
 }
