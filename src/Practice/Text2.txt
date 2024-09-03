@@ -1,11 +1,1 @@
-Error and Exception Metrics:AI/ML models can automatically detect anomalies in error rates by learning the normal behavior patterns of each application. When there's a deviation from the norm, such as a sudden spike in errors or exceptions, the model can flag it as a potential issue.
-
-Security Metrics:AI/ML can be employed to analyze login attempts and user behaviors to detect suspicious activities, such as brute force attacks, unauthorized access attempts, or insider threats. Models can be trained to recognize normal user behavior and flag deviations.
-
-Performance Metrics:AI models can predict potential performance degradation by continuously analyzing metrics like CPU usage, memory usage, and network I/O.
-
-Infrastructure Metrics:AI/ML can continuously monitor infrastructure metrics such as server uptime and service availability, detecting outages or downtime more efficiently than traditional monitoring systems.
-
-Application Metrics:AI/ML can analyze request and response times to identify slow-performing areas of an application. By understanding the application's usage patterns, the models can suggest optimizations to improve response times.
-
-The AI/ML insights can be integrated into Splunk dashboards, providing real-time visualization of metrics. This offers visibility into the health and performance of each application.Based on the AI/ML analysis, the system can trigger automated alerts for the operations team.
+Text2
