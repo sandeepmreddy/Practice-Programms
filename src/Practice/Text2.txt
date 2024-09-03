@@ -1,11 +1,11 @@
-AI/ML Model for Monitoring Splunk Logs and Consolidating Key Metrics
+Error and Exception Metrics:AI/ML models can automatically detect anomalies in error rates by learning the normal behavior patterns of each application. When there's a deviation from the norm, such as a sudden spike in errors or exceptions, the model can flag it as a potential issue.
 
-The objective of this idea is to develop an AI/ML model to monitor Splunk logs across all applications within the /Organization, aiming to consolidate the following key metrics:
+Security Metrics:AI/ML can be employed to analyze login attempts and user behaviors to detect suspicious activities, such as brute force attacks, unauthorized access attempts, or insider threats. Models can be trained to recognize normal user behavior and flag deviations.
 
-1. Error and Exception Metrics: These include application errors, system errors, and network errors, which can facilitate early identification and resolution of issues.
-2. Security Metrics: These track failed login attempts and suspicious activities, aiding in the detection of potential security threats and breaches.
-3. Performance Metrics: Metrics such as CPU usage, memory usage, disk I/O, and network I/O. These help identify performance bottlenecks and optimize resource utilization.
-4. Infrastructure Metrics: These metrics track server uptime and service availability, helping to ensure the reliability and continuity of your systems.
-5. Application Metrics: Metrics such as response times and request rates, which can help in optimizing application performance and enhancing user experience.
+Performance Metrics:AI models can predict potential performance degradation by continuously analyzing metrics like CPU usage, memory usage, and network I/O.
 
-A dashboard should be created using Splunk's dashboard features to display these metrics, allowing visibility into each application's performance.
+Infrastructure Metrics:AI/ML can continuously monitor infrastructure metrics such as server uptime and service availability, detecting outages or downtime more efficiently than traditional monitoring systems.
+
+Application Metrics:AI/ML can analyze request and response times to identify slow-performing areas of an application. By understanding the application's usage patterns, the models can suggest optimizations to improve response times.
+
+The AI/ML insights can be integrated into Splunk dashboards, providing real-time visualization of metrics. This offers visibility into the health and performance of each application.Based on the AI/ML analysis, the system can trigger automated alerts for the operations team.
