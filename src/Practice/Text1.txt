@@ -1,0 +1,3 @@
+AI/ML enhances monitoring by using Splunk's aggregated data through Splunk queries for automatic anomaly detection, error pattern analysis, and predictive analytics. It helps identify performance bottlenecks, predict system degradations, and detect security threats.
+
+By integrating AI/ML insights into Splunk dashboards, users can get more actionable and predictive insights rather than just raw data. 
