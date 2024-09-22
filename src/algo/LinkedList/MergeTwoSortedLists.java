@@ -16,7 +16,7 @@ class ListNode
 
 }
 
-public class LInkedListPractice {
+public class MergeTwoSortedLists {
 
     public static ListNode mergeSortedLists(ListNode l1, ListNode l2)
     {
@@ -42,7 +42,7 @@ public class LInkedListPractice {
     }
     public static void main(String[] args)
     {
-        LInkedListPractice p= new LInkedListPractice();
+        MergeTwoSortedLists p= new MergeTwoSortedLists();
         ListNode l1 = new ListNode(2,new ListNode(3,new ListNode(4)));
         ListNode l2 = new ListNode(1,new ListNode(12,new ListNode(13)));
         ListNode result= mergeSortedLists(l1,l2);

@@ -2,16 +2,6 @@
 
 package algo.LinkedList;
 
-class Node {
-    int value;
-    Node next;
-
-    public Node(int value) {
-        this.value = value;
-        this.next = null;
-    }
-}
-
 class LinkedList {
     Node head;
 
@@ -55,9 +45,9 @@ public class CircularDependency {
 
         // Checking for a cycle in the list
         if (list.hasCycle()) {
-            System.out.println("LinkedList has a cycle.");
+            System.out.println("RevLInkedList1 has a cycle.");
         } else {
-            System.out.println("No cycle in the LinkedList.");
+            System.out.println("No cycle in the RevLInkedList1.");
         }
     }
 }
