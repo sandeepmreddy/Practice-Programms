@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Esay;
 
 public class FindMaxMin {
     public static void main(String[] args) {

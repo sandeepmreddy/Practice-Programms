@@ -5,7 +5,7 @@ import java.util.Map;
 
 //Time complexity: O(n)
 //Space complexity: O(n)
-class MajorityElement {
+class MajorityElement3 {
 
     static Map.Entry<Integer,Integer> majorityEle(int[] arr) {
         HashMap<Integer, Integer> map = new HashMap();

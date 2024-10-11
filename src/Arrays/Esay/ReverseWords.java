@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Esay;
 
 public class ReverseWords {
     public static String reverseWords(String str) {

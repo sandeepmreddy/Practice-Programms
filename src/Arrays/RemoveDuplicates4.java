@@ -1,7 +1,7 @@
 package Arrays;
 //Time complexity: O(n)
 //Space complexity: O(1)
-public class RemoveDuplicates {
+public class RemoveDuplicates4 {
 
     static void removeDulicates1(int[] nums1)
     {

@@ -1,7 +1,7 @@
 package Arrays;
 
 
-class BuySellShares {
+class BuySellShares1 {
 
     //Time complexity: O(n2)
     //Space complexity: O(1)

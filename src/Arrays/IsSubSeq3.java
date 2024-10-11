@@ -2,7 +2,7 @@ package Arrays;
 
 // Time Complexity: O(∣T∣) Target String
 // Space Complexity: O(1)
-class IsSubSeq {
+class IsSubSeq3 {
 
     public static boolean isSubsequence(String s, String t) {
         Integer leftBound = s.length(), rightBound = t.length();

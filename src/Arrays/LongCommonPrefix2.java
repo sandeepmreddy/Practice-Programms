@@ -3,7 +3,7 @@ package Arrays;
 //Time complexity : O(S)  where S is the sum of all characters in all strings
 //Space complexity : O(1)
 
-public class LongCommonPrefix {
+public class LongCommonPrefix2 {
 // For every iteration, We get into prefix
     public static String longCommonPrefix1(String[] strs) {
         if (strs.length == 0) return "";

@@ -1,6 +1,6 @@
 package Arrays;
 
-public class FirstOccurrenceIndex {
+public class FirstOccurrenceIndex3 {
 
     public static void main(String[] args) {
         String str = "HBÑ world";

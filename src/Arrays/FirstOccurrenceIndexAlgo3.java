@@ -1,7 +1,7 @@
 package Arrays;
 // Time complexity: O(nm)
 //Space complexity: O(1)
-public class FirstOccurrenceIndexAlgo {
+public class FirstOccurrenceIndexAlgo3 {
 
     public static void main(String[] args) {
         String haystack = "Helloworldhiworld";

@@ -3,7 +3,7 @@ package Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
-public  class DistinctElements {
+public  class DistinctElements12 {
 
     public static void main(String[] args) {
         int[] array1 = {1, 2, 3, 4, 5};

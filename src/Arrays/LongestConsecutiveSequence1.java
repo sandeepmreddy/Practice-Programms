@@ -2,8 +2,8 @@ package Arrays;
 
 import java.util.HashSet;
 import java.util.Set;
-
-public class LongestConsecutiveSequence {
+//complexity is approximately O(n),overall space complexity is O(n)
+public class LongestConsecutiveSequence1 {
 
     public static int longestConsecutive(int[] nums) {
         if (nums == null || nums.length == 0) {
@@ -41,7 +41,7 @@ public class LongestConsecutiveSequence {
 
     public static void main(String[] args) {
         // Test case 1
-        int[] nums1 = {100, 200, 1, 3, 2, 4};
+        int[] nums1 = {200,6, 5, 1, 3, 2, 4,100};
         System.out.println("The longest consecutive sequence length is: " + longestConsecutive(nums1));
 
         // Test case 2

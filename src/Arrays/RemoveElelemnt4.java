@@ -1,7 +1,7 @@
 package Arrays;
 //Time complexity: O(n)
 //Space complexity: O(1)
-public class RemoveElelemnt {
+public class RemoveElelemnt4 {
 
     static int removeElement(int[] array,int ele)
     {
