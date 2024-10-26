@@ -1,4 +1,4 @@
-package Arrays.Esay;
+package Arrays.Easy;
 //Time Complexity: O(N)
 //Space Complexity :O(1)
 public class LengthLastWord {

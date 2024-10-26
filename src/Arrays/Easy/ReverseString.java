@@ -1,4 +1,4 @@
-package Arrays.Esay;
+package Arrays.Easy;
 
 public class ReverseString {
     public static void main(String[] args) {
