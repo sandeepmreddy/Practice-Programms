@@ -1,5 +1,5 @@
-package Arrays.Misc;
-
+package Arrays.TwoPointer;
+//T O(n), S o(1) -- This is two pointer approach
 
 public class TrappingRainWater {
     public static int trap(int[] height) {
