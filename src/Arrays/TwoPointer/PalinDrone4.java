@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.TwoPointer;
 //Time complexity : O(n)
 //Space complexity : O(1)
 
