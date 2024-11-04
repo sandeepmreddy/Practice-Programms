@@ -1,22 +1,19 @@
-package Arrays;
-
+package Arrays.Greedy;
+//Time Complexity: O(n),Space Complexity: O(1)
 public class MaxSubarraySumBest1 {
 
     // Function to find the maximum sum of a contiguous subarray
     public static int maxSubArray(int[] nums) {
-        // Initialize variables to track the maximum sum
-        int currentMax = nums[0]; // current subarray sum
-        int globalMax = nums[0];  // global maximum subarray sum
+        // Initialize variables to track the maximum subarray sums
+        int currentMax = nums[0]; // Maximum sum ending at the current position
+        int globalMax = nums[0];  // Overall maximum sum across the array
 
-        // Traverse the array from the second element
+        // Traverse the array starting from the second element
         for (int i = 1; i < nums.length; i++) {
-            // Update the current subarray sum
+            // Decide to either extend the current subarray or start a new one
             currentMax = Math.max(nums[i], currentMax + nums[i]);
-
-            // Update the global maximum sum if needed
-            if (currentMax > globalMax) {
-                globalMax = currentMax;
-            }
+            // Update the global maximum subarray sum
+            globalMax = Math.max(globalMax, currentMax);
         }
 
         return globalMax;

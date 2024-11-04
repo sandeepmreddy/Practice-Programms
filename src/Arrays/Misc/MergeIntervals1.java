@@ -2,7 +2,7 @@ package Arrays.Misc;
 
 import java.util.*;
 //T O(nlogn) S O(logN) (or O(n))
-class MergeIntervals {
+class MergeIntervals1 {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         LinkedList<int[]> merged = new LinkedList<>();
@@ -20,8 +20,8 @@ class MergeIntervals {
         // Correctly initialized example array
         int[][] intervals = new int[][]{{1,3}, {2,6}, {8,10}, {15,18}};
 
-        // Creating an instance of MergeIntervals to call the merge method
-        MergeIntervals merger = new MergeIntervals();
+        // Creating an instance of MergeIntervals1 to call the merge method
+        MergeIntervals1 merger = new MergeIntervals1();
         int[][] mergedIntervals = merger.merge(intervals);
 
         System.out.println("Merged intervals: ");

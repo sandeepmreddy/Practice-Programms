@@ -1,0 +1,121 @@
+### 1. **Two Sum**
+   - **Problem**: Given an array of integers, return the indices of two numbers such that they add up to a specific target.
+   - **Approach**: Use a hashmap to track the indices of the elements.
+   - **Time Complexity**: O(n).
+
+---
+
+### 2. **Maximum Subarray (Kadane’s Algorithm)**
+   - **Problem**: Find the contiguous subarray within an array (containing at least one number) which has the largest sum.
+   - **Approach**: Use Kadane’s Algorithm to maintain a running maximum sum.
+   - **Time Complexity**: O(n).
+
+---
+
+### 3. **Merge Intervals**
+   - **Problem**: Given a collection of intervals, merge all overlapping intervals.
+   - **Approach**: Sort intervals by start time, then merge intervals if they overlap.
+   - **Time Complexity**: O(n log n) due to sorting.
+
+---
+
+### 4. **Container With Most Water**
+   - **Problem**: Given an array representing heights, find two lines that together with the x-axis form a container, such that the container holds the most water.
+   - **Approach**: Use two pointers from the ends and move inward.
+   - **Time Complexity**: O(n).
+
+---
+
+### 5. **Find the Duplicate Number**
+   - **Problem**: An array of n+1 integers is given where each integer is between 1 and n (inclusive), with exactly one duplicate. Find the duplicate number.
+   - **Approach**: Use cycle detection (Floyd’s Tortoise and Hare) or binary search.
+   - **Time Complexity**: O(n).
+
+---
+
+### 6. **Product of Array Except Self**
+   - **Problem**: Given an array, return an array such that each element at index i is the product of all elements in the array except the one at i.
+   - **Approach**: Use two passes to compute prefix and suffix products.
+   - **Time Complexity**: O(n), without using division.
+
+---
+
+### 7. **Best Time to Buy and Sell Stock**
+   - **Problem**: Given an array where each element is the price of a stock on a given day, find the maximum profit you can achieve by buying and selling once.
+   - **Approach**: Track the minimum price and compute the potential profit.
+   - **Time Complexity**: O(n).
+
+---
+
+### 9. **Rotate Array**
+   - **Problem**: Rotate an array to the right by k steps, where k is non-negative.
+   - **Approach**: Reverse parts of the array to shift elements.
+   - **Time Complexity**: O(n).
+
+---
+
+### 10. **Subarray Sum Equals K**
+   - **Problem**: Given an array of integers and an integer k, find the total number of continuous subarrays whose sum equals to k.
+   - **Approach**: Use a hashmap to store the cumulative sum up to each index.
+   - **Time Complexity**: O(n).
+
+---
+
+### 11. **Find All Duplicates in an Array**
+   - **Problem**: Return all elements that appear twice in an array of integers from 1 to n.
+   - **Approach**: Use the indices to mark visited numbers.
+   - **Time Complexity**: O(n).
+
+---
+
+### 12. **Longest Consecutive Sequence**
+   - **Problem**: Given an unsorted array, find the length of the longest consecutive elements sequence.
+   - **Approach**: Use a set for fast lookups and check sequence starts.
+   - **Time Complexity**: O(n).
+
+---
+
+### 14. **Maximum Product Subarray**
+   - **Problem**: Find the contiguous subarray within an array that has the largest product.
+   - **Approach**: Track the maximum and minimum products up to each index.
+   - **Time Complexity**: O(n).
+
+---
+
+### 15. **Find the Missing Number**
+   - **Problem**: Given an array containing n distinct numbers taken from the range 0 to n, find the missing number.
+   - **Approach**: Use XOR or sum formula.
+   - **Time Complexity**: O(n).
+
+---
+
+5. Container with Most Water
+Problem: Given an array representing heights, find two lines that form a container to hold the maximum water.
+Approach: Use two-pointer technique to maximize the area by moving the pointers inward.
+Time Complexity: O(n).
+6. Trapping Rain Water
+Problem: Calculate how much water can be trapped after raining on an elevation map.
+Approach: Use two pointers or a stack to calculate trapped water by keeping track of the maximum heights on the left and right.
+Time Complexity: O(n).
+
+11. Find Minimum in Rotated Sorted Array
+Problem: Find the minimum element in a rotated sorted array.
+Approach: Use binary search to find the pivot point.
+Time Complexity: O(log n).
+
+### Tips for Solving Array Problems
+
+- **Use Hashing for Quick Lookups**: Hashmaps or sets often reduce complexity when searching or counting.
+- **Two-Pointer Technique**: Useful for sorted arrays or when looking for pairs.
+Use Two Pointers: Problems like Container with Most Water and 3Sum leverage the two-pointer approach for optimal solutions.
+- **Sorting as Preprocessing**: Sorting can simplify the problem structure, but it adds O(n log n) complexity.
+- **Sliding Window Technique**: Ideal for fixed-size subarray problems or cumulative sums.
+Sliding Window Technique: Common for problems involving subarrays with constraints, like Subarray Sum Equals K.
+- **Greedy Approach**: Some problems, like maximum subarray sum or best time to buy and sell stock, benefit from greedy techniques.
+Optimize with Hashmaps and Sets: Many problems, like Two Sum and Longest Consecutive Sequence,
+benefit from hashmaps or sets for constant-time lookups.
+Binary Search on Sorted Arrays: Efficient for finding rotations, pivots, or specific elements in sorted arrays.
+Pre-compute Prefix or Suffix Products/Sums: Helps solve product/sum problems efficiently without using nested loops.
+
+---
+Each of these problems helps you master different aspects of array manipulation, search techniques, and optimization strategies.

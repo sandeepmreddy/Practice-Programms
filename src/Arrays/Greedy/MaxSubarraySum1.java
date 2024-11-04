@@ -1,4 +1,4 @@
-package Arrays;
+package Arrays.Greedy;
 
 public class MaxSubarraySum1 {
 
