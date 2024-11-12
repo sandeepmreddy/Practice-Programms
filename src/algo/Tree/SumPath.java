@@ -1,5 +1,5 @@
 package algo.Tree;
-
+// Time Complexity o(n), Space Complexity o(n)
 import java.util.Stack;
 
 public class SumPath {
@@ -31,6 +31,13 @@ public class SumPath {
         }
         return false;
     }
+ /*                4
+                  / \
+                 2   7
+                / \ / \
+               1  3 6  9*/
+
+
 
     public static void main(String[] args) {
         // Example usage
@@ -44,7 +51,7 @@ public class SumPath {
         root.right.left = new TreeNode(6);
         root.right.right = new TreeNode(9);
 
-        boolean sumPath = hasPathSum(root, 17);
+        boolean sumPath = hasPathSum(root, 9);
         System.out.println("sumPath: " + sumPath);
     }
 }

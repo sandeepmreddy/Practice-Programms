@@ -1,5 +1,5 @@
 package algo.stack;
-
+//Time complexity : O(n), Space complexity : O(n)
 import java.util.Map;
 import java.util.Stack;
 
@@ -35,8 +35,8 @@ class BalancedWithMap {
     // Driver code
     public static void main(String[] args)
     {
-        //String expr = "([{}])";
-        String expr = "{}[]{}";
+        String expr = "([{}])";
+        //String expr = "{}[]{}";
 
         // Function call
         if (isValid(expr))

@@ -34,6 +34,12 @@ public class BSTDeleteNode {
 
         return root;
     }
+        /* Let us create following BST
+              50
+           /     \
+          30      70
+         /  \    /  \
+       20   40  60   80 */
 
     // Function to find the minimum value node in a given tree
     int minValue(TreeNode root) {

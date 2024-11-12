@@ -17,7 +17,17 @@ public class BinaryTreeInverter {
         root.right = left;
         return root;
     }
+    /*    4
+         / \
+        2   7
+       / \ / \
+      1  3 6  9
 
+        4
+       / \
+      7   2
+     / \ / \
+    9  6 3  1*/
     // Helper method to print the tree inorder
     public void printInorder(TreeNode node) {
         if (node == null) {
@@ -31,17 +41,7 @@ public class BinaryTreeInverter {
     public static void main(String[] args) {
         // Example usage
         BinaryTreeInverter inverter = new BinaryTreeInverter();
-             /*      4
-                  / \
-                 2   7
-                / \ / \
-                1  3 6  9
 
-                 4
-                / \
-                7   2
-                / \ / \
-                9  6 3  1*/
 
         // Create a sample binary tree
         TreeNode root = new TreeNode(4);
