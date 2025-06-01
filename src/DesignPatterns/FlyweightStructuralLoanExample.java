@@ -54,7 +54,7 @@ class Loan {
 }
 
 // Client class
-public class FlyweightLoanExample {
+class FlyweightLoanExample {
     public static void main(String[] args) {
         // Creating the flyweight objects
         LoanFactory loanFactory = new LoanFactory();

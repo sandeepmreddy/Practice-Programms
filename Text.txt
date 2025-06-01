@@ -1,0 +1,55 @@
+
+1. **Strong Facilitation Skills**
+
+   * Effectively manages stand-ups, sprint planning, retrospectives, and reviews.
+
+2. **Proactive Impediment Removal**
+
+   * Quickly identifies and removes blockers that could affect team progress.
+
+3. **Team Empowerment**
+
+   * Encourages team ownership, autonomy, and accountability.
+
+4. **Excellent Communication**
+
+   * Maintains clear and timely communication between the team, product owner, and stakeholders.
+
+5. **Promotes Agile Best Practices**
+
+   * Ensures adherence to Agile principles and continuously reinforces Scrum values.
+
+6. **Supports Continuous Improvement**
+
+   * Facilitates productive retrospectives and follows through on action items.
+
+7. **Encourages Collaboration**
+
+   * Builds a culture of trust and transparency among team members.
+
+8. **Adaptability and Calm Under Pressure**
+
+   * Handles shifting priorities or conflicts with composure and pragmatism.
+
+---
+
+### ✍️ **Additional Feedback Points (Can be used for retrospectives or 1-on-1s):**
+
+#### 🔹 *Positive Feedback:*
+
+* Always ensures the team remains focused on the sprint goal.
+* Brings great energy to meetings and keeps them engaging.
+* Acts as a neutral facilitator while supporting both the team and PO's objectives.
+* Encourages personal and professional growth among team members.
+* Provides valuable insights during conflict resolution or technical blockers.
+
+#### 🔹 *Constructive Feedback (If Needed):*
+
+* Consider focusing more on time-boxing meetings to increase efficiency.
+* Can work more closely with the Product Owner to improve backlog refinement sessions.
+* More proactive stakeholder communication would help anticipate upcoming dependencies.
+* Could explore using additional metrics (e.g., velocity trends, burn-down charts) to improve visibility.
+
+---
+
+Let me know if you want this formatted for a performance review, 360 feedback form, or email.
